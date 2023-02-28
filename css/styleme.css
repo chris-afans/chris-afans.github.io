@@ -23,8 +23,13 @@ body{
   clear: both;
 }
 
-.images{
-	width: 400px; 
+#img1{
+    width: 400px; 
+	height: 250px;
+}
+
+#img2{
+    width: 400px; 
 	height: 250px;
 }
 
