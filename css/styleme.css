@@ -1,0 +1,29 @@
+body{
+	background-color: #c1b2a5;
+}
+
+#happy{
+	color: #dc8816;
+	font-style: italic;
+}
+
+#sad{
+	color: #485d81;
+	font-style: italic;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img{
+	width: 400px; 
+	height: 250px;
+}
