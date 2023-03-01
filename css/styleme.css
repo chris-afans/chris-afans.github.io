@@ -41,5 +41,9 @@ a:hover {
     text-decoration: underline;
   }
 
+  ol {
+    list-style-type: upper-roman;
+  }  
+
 
 
