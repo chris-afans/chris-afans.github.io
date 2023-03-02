@@ -1,1 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styleme.css">	
+    <meta name="referer" content="origin">
+	<title>Retrieve Grade</title> 
+</head> 
 
+<body> 
+	<form action="https://mumstudents.org/params.php">
+		<fieldset>
+			<legend><strong>Retrieve Your Grade</strong></legend>
+			<label for="name">Name:</label>
+    		<input class="inputs" type="text" id="name" name="name"><br><br>
+    		<label for="id">ID:</label>
+    		<input class="inputs" type="text" id="id" name="id"><br><br>
+    		<label for="courses">Course: </label>
+    		<select name="courses" class="inputs" id="courses">
+    			<option>Select a course</option>
+    			<option>CS472</option>
+    			<option>CS400</option>
+    			<option>CS401</option>
+    			<option>CS527</option>
+    			<option>CS404</option>
+    		</select>
+    		<p>Choose your entry</p>
+    		<input type="radio" id="aug" name="entry" value="August 2022">
+ 			<label for="aug">August 2022</label>
+    		<input type="radio" id="nov" name="entry" value="November 2022">
+ 			<label for="nov">November 2022</label>
+ 			<input type="radio" id="feb" name="entry" value="February 2023">
+			<label for="feb">February 2023</label><br><br>
+
+			<input type="checkbox" id="verify" name="verify">
+  			<label for="verify">Confirm that you are a student and you are trying to check <strong>YOUR</strong> grade only!</label><br><br>
+
+  			<button id="button">GET YOUR GRADE!</button>
+
+
+		</fieldset>
+	</form>
+	
+	
+</body> 
+</html>

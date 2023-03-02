@@ -1,0 +1,28 @@
+body{
+	background-image: url("/img/HW2/background.png");
+	font: 8pt;
+	font-family: Verdana, Tahoma;
+	margin: 0px;
+}
+
+fieldset{
+width:500px;
+margin:0px auto;
+margin-top: 15%;
+}
+
+#name{
+	margin-left: 25pt;
+}
+
+#id{
+	margin-left: 45pt;
+}
+
+#courses{
+	margin-left: 18pt;
+}
+
+#button{
+	margin-left: 35%;
+}
