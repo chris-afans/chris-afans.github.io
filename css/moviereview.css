@@ -64,17 +64,7 @@ h1{
 	clear: both;
 }
 
-.comments{
-	
-	width: 150px;
-  height: 100px;
-  border: 4px solid;  
-  border-radius: 20px;
-	border-color: red;
-	float: left;
-  margin: 0 4%;
-  width: 40%;
-}
+
 
 #ssection{
 	height: 895px;
@@ -98,6 +88,7 @@ h1{
 	height: 150px;
 	background-color: #E8DC9B;
 	margin-bottom: 5%;
+    padding: 8px;
 }
 
 #secomment{
@@ -106,6 +97,7 @@ h1{
 	height: 60px;
 	background-color: #E8DC9B;
 	margin-bottom: 5%;
+    padding: 8px;
 }
 
 #thcomment{
@@ -114,14 +106,16 @@ h1{
 	height: 50px;
 	background-color: #E8DC9B;
 	margin-bottom: 5%;
+    padding: 8px;
 }
 
 #focomment{
 	border-radius: 10px;
 	border: 2px thick;
 	height: 100px;
-	background-color: #E8DC9B;
+	background-color: hsl(51, 63%, 76%);
 	margin-bottom: 5%;
+    padding: 8px;
 }
 
 #fifcomment{
@@ -130,6 +124,7 @@ h1{
 	height: 50px;
 	background-color: #E8DC9B;
 	margin-bottom: 5%;
+    padding: 8px;
 }
 
 #sicomment{
@@ -138,6 +133,7 @@ h1{
 	height: 150px;
 	background-color: #E8DC9B;
 	margin-bottom: 5%;
+    padding: 8px;
 }
 
 #secomment{
@@ -146,6 +142,7 @@ h1{
 	height: 60px;
 	background-color: #E8DC9B;
 	margin-bottom: 5%;
+    padding: 8px;
 }
 
 #eicomment{
@@ -154,6 +151,7 @@ h1{
 	height: 100px;
 	background-color: #E8DC9B;
 	margin-bottom: 5%;
+    padding: 8px;
 }
 
 #nicomment{
@@ -162,6 +160,7 @@ h1{
 	height: 100px;
 	background-color: #E8DC9B;
 	margin-bottom: 5%;
+    padding: 8px;
 }
 
 #tecomment{
@@ -170,6 +169,7 @@ h1{
 	height: 60px;
 	background-color: #E8DC9B;
 	margin-bottom: 5%;
+    padding: 8px;
 }
 
 .images{
@@ -195,6 +195,7 @@ p{
 	overflow: hidden;
 	background-color:  #A2B964;
 	font-size: 8pt;
+    padding: 10pt;
 }
 
 dl{
