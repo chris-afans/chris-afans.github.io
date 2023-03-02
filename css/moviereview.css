@@ -1,5 +1,5 @@
 body{
-	background-image: url("img/HW2/background.png");
+	background-image: url("/img/HW2/background.png");
 	font: 8pt;
 	font-family: Verdana, Tahoma;
 	margin: 0px;
@@ -16,7 +16,7 @@ body{
 }
 
 header{
-	background-image: url("img/HW2/bannerbg.png");
+	background-image: url("/img/HW2/bannerbg.png");
 	background-repeat: repeat;
 	height: 50px;
 }
@@ -48,7 +48,7 @@ h1{
 	font-size: 48pt;
 	font-weight: bold;
 	color: red;
-	background-image: url("img/HW2/rbg.png");
+	background-image: url("/img/HW2/rbg.png");
 	height: 83px;
 	margin-right:250px;
 	
