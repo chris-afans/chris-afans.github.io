@@ -136,7 +136,7 @@ h1{
     padding: 8px;
 }
 
-#secomment{
+#sevcomment{
 	border-radius: 10px;
 	border: 2px thick;
 	height: 60px;
@@ -205,6 +205,10 @@ dl{
 
 dt{
 	font-weight: bold;
+}
+
+.lastelements{
+    padding-bottom: 10pt;
 }
 
 .general:after{
