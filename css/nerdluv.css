@@ -1,0 +1,61 @@
+fieldset{
+    width:500px;
+    margin:0px auto;
+    margin-top: 2%;
+    float: left;
+    background-color: #d8d5f6;
+    border-radius: 25px;
+    
+    }
+    
+    .form:after {
+      content:"";
+      display:block;
+      clear:both;
+     }
+    
+    
+    
+    #newuser{
+        border: 4px thin gray;
+        height: 20px;
+        
+        background-color: whitesmoke;
+        box-shadow: 2px 2px;
+    }
+    
+    #name{
+        margin-top: 10px;
+        margin-left: 70px;
+    }
+    
+    #male{
+        margin-left: 60px;
+    }
+    
+    #age{
+        margin-left: 80px;
+    }
+    
+    #OS{
+        margin-left: 30px;
+    }
+    
+    #sage{
+        margin-left: 25px;
+    }
+    
+    #link{
+        color: red;
+    }
+    
+    #form{
+        background-color: d8d5f6;
+    }
+    
+    #button{
+        background-color: #f9aea9;
+        border: none;
+    }
+    
+    
