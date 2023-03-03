@@ -188,7 +188,7 @@ p{
 }
 
 #generaloverview{
-	width: 200px;
+	width: 250px;
 	float: right;
 	height: 610px;
 	margin-top: -585px;
@@ -208,7 +208,7 @@ dt{
 }
 
 .lastelements{
-    padding-bottom: 10pt;
+    padding-bottom: 5pt;
 }
 
 .general:after{
