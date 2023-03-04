@@ -1,0 +1,37 @@
+#task{
+	border: 4px solid blue;
+	width:700px;
+  margin:0px auto;
+  height: 300px;
+  margin-top: 15%;
+}
+
+h1{
+	color: blue;
+	padding-left: 30px;
+	font-family: Arial;
+}
+
+.column{
+	width: 300px;
+	height: 150px;
+	float: left;
+	margin: 20px;
+	padding: 1px;
+}
+
+#taskinput{
+	border: 4px solid lightblue;
+	border-width: medium;
+	border-radius: 5px;
+}
+
+.tasklabel{
+	margin-left: 10px;
+}
+
+.buttons{
+	margin-left: 10px;
+	width: 270px;
+}
+
