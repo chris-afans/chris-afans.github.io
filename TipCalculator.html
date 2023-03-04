@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/tipcalculator.css">
+	<title>Tip Calculator</title>
+</head>
+<body>
+	<div id="main">
+		<p><img id="calc" src="img/calc.jpg"><h1 id="heading">Tip Calculator</h1></p><br>
+		<input class="inputs" type="text" name="subtotal" id="subtotal">
+		<label class="texts" for="subtotal">$ Subtotal</label><br><br>
+		<input class="inputs" type="text" name="tip" id="tip">
+		<label class="texts" for="tip">%Tip</label><br><br>
+		<button onclick="myFunction()" class="inputs">Calculate Tip</button>
+		<hr>
+		
+		<h1 id="total"><strong>Your Total</strong></h1>
+		<p id="result">$0.00</p>
+		
+		
+	</div>
+
+	<script type="text/javascript" src="js/tipcalculator.js"></script>
+</body>
+</html>
