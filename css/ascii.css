@@ -1,0 +1,49 @@
+body {
+	background-color: #CCCCFF;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14pt;
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 32pt;
+}
+
+#main {
+	position: relative;
+}
+
+#text {
+	width: 90%;
+	height: 400px;
+	font-size: 12pt;
+	position: absolute;
+	margin-left: -550px;
+	box-sizing: border-box;
+}
+
+.fsets {
+	width: 150px;
+	height: 60px;
+	border: 5px solid black;
+	float: left;
+	padding: 0;
+	margin-top: 410px;
+	box-sizing: border-box;
+}
+
+.fsets:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#fsets {
+	margin-left: 300px;
+}
+
+.links {
+	float: right;
+	margin-top: 400px;
+}

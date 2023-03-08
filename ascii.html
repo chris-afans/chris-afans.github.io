@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="ascii.css" type="text/css" rel="stylesheet">
+	<title>ASCIImation</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+	<h1>CS472: ASCII Animation Viewer</h1>
+
+	<div id="main">
+		<textarea rows="20" cols="80" id="text"></textarea>
+	</div>
+	<div id="fsets">
+		<fieldset class="fsets">
+			<legend>Play Controls:</legend>
+			<button id="start">Start</button>
+			<button id="stop">Stop</button>
+		</fieldset>
+		<fieldset class="fsets">
+			<legend>Animation</legend>
+			<select id="optionselect">
+				<option value="blank" id="blank">Blank</option>
+				<option value="exercise" id="exercise">Exercise</option>
+				<option value="juggler" id="juggler">Juggler</option>
+				<option value="bike" id="bike">Bike</option>
+				<option value="dive" id="dive">Dive</option>
+				<option value="custom" id="custom">Custom</option>
+			</select>
+		</fieldset>
+		<fieldset class="fsets">
+			<legend>Size</legend>
+			<select id="size">
+				<option value="7pt">Tiny</option>
+				<option  value="10pt">Small</option>
+				<option value="12pt">Medium</option>
+				<option value="16pt">Large</option>
+				<option value="24pt">Extra Large</option>
+				<option value="32pt">XXL</option>
+			</select>
+		</fieldset>
+		<fieldset class="fsets">
+			<legend>Speed</legend>
+			<input type="checkbox" id="turbo">
+			<label for="turbo">Turbo</label>
+		</fieldset><br><br>
+	</div>
+
+	<div class="links">
+		<br><a id="link1" href="http://validator.w3.org/check/referer"> <img
+				src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"></a><br>
+		<a id="link2" href="http://jigsaw.w3.org/css-validator/check/referer"> <img
+				src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="html validator"></a><br>
+		<a id="link3" href="https://mumstudents.org/jscheck/referer.php"><img
+				src="http://mumstudents.org/jscheck/jscheck-small.png" alt="Valid JS"></a>
+	</div>
+
+	<script src="animations.js"></script>
+	<script src="ascii.js"></script>
+</body>
+
+</html>
