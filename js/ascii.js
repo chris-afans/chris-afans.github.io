@@ -9,6 +9,13 @@ let position = 0;
 let myArray = new Array();
 let index = 0;
 let isRunning = false;
+ANIMATIONS["custom"] = " \\o/\n" +
+"  #\n" +
+"_/ \\_\n" + 
+"=====\n" +
+"  o\n" +
+    " /#\\\n" +
+    " _|_\n";
 
 /**
  * This function calls all the eventlistener functions when the page loads.
