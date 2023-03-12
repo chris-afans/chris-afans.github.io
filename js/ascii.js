@@ -53,7 +53,7 @@ function runAnimation() {
     animationId = setInterval(function(){
         position++;
         frames();
-        document.querySelector("#text").style.paddingLeft = position + "px";
+        
         let lastIndex = index + 1;
         if(myArray[lastIndex] != null){
          index++;
