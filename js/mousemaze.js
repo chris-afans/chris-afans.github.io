@@ -1,17 +1,17 @@
 
 $(document).ready(function(){
     initialize();
-    
 
-    
+
+
     // $(".boundary").mouseout(function(){
     //    $(".boundary").each(function() {
     //     $(this).css({
     //         "background-color" :"#eeeeee",
     //         "cursor" : "pointer"
-    //     }); 
-    //    }) 
-       
+    //     })
+    //    }
+
     // });
 });
 
@@ -25,33 +25,33 @@ function initialize() {
     addDisallowCheatingEventListener();
 }
 function addyouLoseEventListener(){
-    var elements = document.getElementsByClassName("boundary");
+    let elements = document.getElementsByClassName("boundary");
     console.log(elements);
-    for (var i = 0; i < elements.length; i++) {
-        elements[i].addEventListener('mouseover', youLose)
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].addEventListener("mouseover", youLose)
       }
     //document.querySelector("div.boundary").addEventListener('hover', youLose);
 }
 
 function addyouWinEventListener() {
-    document.querySelector("#end").addEventListener('mouseover', youWin);
+    document.querySelector("#end").addEventListener("mouseover", youWin);
 }
 
 function addRestartMazeEventListener() {
-    document.querySelector("#start").addEventListener('click', restartMaze);
+    document.querySelector("#start").addEventListener("click", restartMaze);
 }
 
 function addDisallowCheatingEventListener() {
     // var elements = document.querySelectorAll("p, h1, h2");
     // console.log(elements);
     // for (var i = 0; i < elements.length; i++) {
-        
+
     //     elements[i].addEventListener('mouseover', disallowCheating)
-        
-        
-    //   
-    document.querySelector("#maze").addEventListener('mouseleave', disallowCheating);
-    
+
+
+    //
+   document.querySelector("#maze").addEventListener("mouseleave", disallowCheating);
+
 }
 
 function disallowCheating() {
@@ -62,26 +62,25 @@ function disallowCheating() {
 
 function youLose() {
       lost = true;
-      if(win == false && start == true){  
+      if(win == false && start == true){
       $("div.boundary").css({
              "background-color" :"red",
              "cursor" : "pointer"
          });
-         
-        $('#status').html("You Lose!");
-        
+
+        $("#status").html("You Lose!");
+
         }
 }
 
 function youWin() {
     win = true;
     if(lost == false){
-        $('#status').html("You Win!"); 
+        $("#status").html("You Win!");
     }
 }
 
 function restartMaze() {
-    
     if($(".boundary").each(function(){
         $(this).css({
             "background-color" : "red"
@@ -89,11 +88,11 @@ function restartMaze() {
     })){
         $(".boundary").each(function() {
             $(this).css({
-                "background-color" :"#eeeeee"                
+                "background-color" :"#eeeeee"
             });
            });
            $("#status").html("Click the &quot;S&quot; to begin.");
-           lost = false; 
+           lost = false;
            win = false;
            start = true;
     }
