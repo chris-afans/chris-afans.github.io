@@ -62,7 +62,7 @@ function disallowCheating() {
 
 function youLose() {
       lost = true;
-      if(win == false){  
+      if(win == false && start == true){  
       $("div.boundary").css({
              "background-color" :"red",
              "cursor" : "pointer"
