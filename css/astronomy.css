@@ -1,0 +1,9 @@
+.img{
+    visibility: hidden;
+    margin-left: 30%;
+    margin-top: 7%;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 150px;
+}
