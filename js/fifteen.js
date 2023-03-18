@@ -66,40 +66,25 @@ function init() {
     });
 
     $("#shufflebutton").click(function () {
-        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-        for (let i = 0; i < tiles.length; i++) {
+        for (let i = tiles.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             let temp = tiles[i];
             tiles[i] = tiles[j];
             tiles[j] = temp;
-            console.log(tiles);
             let x = ((i % 4) * 100);
             let y = (Math.floor(i / 4) * 100);
-            let tempX = tiles[i].x;
-            let tempY = tiles[i].y;
-            if (empX - tiles[i].x == 100 && empY - tiles[i].y == 0 || empX - tiles[i].x == 0 && empY - tiles[i].y == 100
-                || empX - tiles[i].x == -100 && empY - tiles[i].y == 0 || empX - tiles[i].x == 0 && empY - tiles[i].y == -100
-                || empX - tiles[i].x == 0 && empY - tiles[i].y == 0) {
-            tiles[i].className = "puzzlepiece";
-            tiles[i].style.left = x + 'px';
-            tiles[i].style.top = y + 'px';
-            tiles[i].style.backgroundImage = 'url("img/background.jpg")';
-            tiles[i].style.backgroundPosition = -x + 'px ' + (-y) + 'px';
-            tiles[i].x = empX;
-            tiles[i].y = empY;
-            empX = tempX;
-            empY = tempY;
-         }
-        }
+            this.style.left = empX + 'px';
+            this.style.top = empY + 'px';
+          }
 
         //   tiles.forEach((piece, index) => {
         //     let x = ((i % 4) * 100);
         //     let y = (Math.floor(i / 4) * 100);
         //     this.style.left = empX + 'px';
         //     this.style.top = empY + 'px';
-
+           
         //   });  
-
+        
 
     });
 
