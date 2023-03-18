@@ -8,6 +8,7 @@ function init() {
     let puzzleArea = $("#puzzlearea");
     let tiles = puzzleArea[0].children;
     let movable = false;
+    let finalTile = [];
 
     // initialize each piece
     for (let i = 0; i < tiles.length; i++) {
@@ -30,6 +31,8 @@ function init() {
         // store x and y for later
         tile.x = x;
         tile.y = y;
+
+        finalTile.push(tile);
     }
 
     let puzzlepiece = $(".puzzlepiece");
@@ -52,44 +55,54 @@ function init() {
 
     //change position of movable tile when clicked 
     $(puzzlepiece).click(function () {
-        let tempX = this.x;
-        let tempY = this.y;
-
         if (movable == true) {
-            this.style.left = empX + 'px';
-            this.style.top = empY + 'px';
-            this.x = empX;
-            this.y = empY;
-            empX = tempX;
-            empY = tempY;
+            swap(this);
         }
     });
 
-    $("#shufflebutton").click(function () {
-        for (let i = tiles.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            let temp = tiles[i];
-            tiles[i] = tiles[j];
-            tiles[j] = temp;
-            let x = ((i % 4) * 100);
-            let y = (Math.floor(i / 4) * 100);
-            this.style.left = empX + 'px';
-            this.style.top = empY + 'px';
-          }
+    function swap(tile) {
+        let tempX = tile.x;
+        let tempY = tile.y;
 
-        //   tiles.forEach((piece, index) => {
-        //     let x = ((i % 4) * 100);
-        //     let y = (Math.floor(i / 4) * 100);
-        //     this.style.left = empX + 'px';
-        //     this.style.top = empY + 'px';
-           
-        //   });  
-        
+        if (movable == true) {
+            tile.style.left = empX + 'px';
+            tile.style.top = empY + 'px';
+            tile.x = empX;
+            tile.y = empY;
+            empX = tempX;
+            empY = tempY;
+        }
+    }
+
+    $("#shufflebutton").click(function () {
+        finalTile = shuffle(finalTile);
+
+        // initialize each piece
+        for (let i = 0; i < finalTile.length; i++) {
+            let tile = finalTile[i];
+            swap(tile);
+        }
 
     });
 
 }
 
+function shuffle(array) {
+    let currentIndex = array.length, randomIndex;
 
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+
+        // Pick a remaining element.
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+}
 
 
